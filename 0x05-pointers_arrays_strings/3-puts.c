@@ -3,18 +3,18 @@
 /**
  * _puts - prints a string, followed by a new line, to stdout
  *
- * @s : pointer to a string
+ * @s: pointer to a string
  *
- * Return : void
+ * Return: void
  */
 
-void _puts(char *s)
+void _puts(char *str)
 {
-	int i = 0;
+	int i;
 
-	while (*(s + i) != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		putchar(*(s + i));
-		i++;
+		_putchar(str[i]);
 	}
+	_putchar('\n');
 }
