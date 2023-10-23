@@ -1,15 +1,14 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * *_strstr - locates first occurence of a substring in a string
- *
+ * *_strstr - locates a substring
  * @haystack: string to search in
- * @needle: string to locate
+ * @needle: substring to look for
  *
- * Return: pointer to the beginning of the located substring or NULL if
- * not found
+ * Return: pointer to the beginning of the located substring
+ * or NULL if the substring is not found
  */
-
 char *_strstr(char *haystack, char *needle)
 {
 	int i, j;
